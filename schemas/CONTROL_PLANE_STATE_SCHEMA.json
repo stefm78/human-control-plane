@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "human-control-plane.state.v1",
+  "type": "object",
+  "required": ["schema","state_identity","updated_at","source_of_truth","source_identities","system_state","kernels","works","partitions","learnings","artifacts","gates","warnings","attention_items","suggested_actions","coverage","update_contract"],
+  "properties": {
+    "schema":{"const":"human-control-plane.state.v1"},
+    "state_identity":{"type":"string","pattern":"^sha256-canonical-payload:[0-9a-f]{64}$"},
+    "updated_at":{"type":"string"},
+    "source_of_truth":{"type":"object"},
+    "source_identities":{"type":"array"},
+    "system_state":{"type":"object"},
+    "kernels":{"type":"array"},
+    "works":{"type":"array"},
+    "partitions":{"type":"array"},
+    "learnings":{"type":"array"},
+    "artifacts":{"type":"array"},
+    "gates":{"type":"array"},
+    "warnings":{"type":"array"},
+    "attention_items":{"type":"array"},
+    "suggested_actions":{"type":"array"},
+    "coverage":{"type":"object"},
+    "update_contract":{"type":"object"}
+  }
+}
