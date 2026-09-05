@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "human-control-plane.control-plane.v1",
+  "type": "object",
+  "required": ["schema","snapshot_id","generated_at","source_of_truth","system_state","kernels","works","learnings","artifacts","gates","warnings","attention_items","suggested_actions","coverage"],
+  "properties": {
+    "schema":{"const":"human-control-plane.snapshot.v1"},
+    "snapshot_id":{"type":"string","minLength":1},
+    "generated_at":{"type":"string"},
+    "source_of_truth":{"type":"string"},
+    "system_state":{"type":"object"},
+    "kernels":{"type":"array","items":{"type":"object","required":["name","spec_id","version","status","canonical_file","state_identity","role","freshness"]}},
+    "works":{"type":"array"},
+    "partitions":{"type":"array"},
+    "learnings":{"type":"array"},
+    "artifacts":{"type":"array"},
+    "gates":{"type":"array"},
+    "warnings":{"type":"array"},
+    "attention_items":{"type":"array"},
+    "suggested_actions":{"type":"array"},
+    "coverage":{"type":"object"}
+  }
+}
