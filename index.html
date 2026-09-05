@@ -1,0 +1,8 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Human Control Plane</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><div><h1>Human Control Plane</h1><p id="snapshot"></p><p id="sourceState"></p></div><div class="status" id="control"></div></header>
+<nav><button data-view="overview">Overview</button><button data-view="kernels">Kernels</button><button data-view="works">Works</button><button data-view="learnings">Learnings</button><button data-view="actions">Actions</button></nav>
+<main>
+<section id="overview" class="view"></section><section id="kernels" class="view hidden"></section><section id="works" class="view hidden"></section><section id="learnings" class="view hidden"></section>
+<section id="actions" class="view hidden"><div id="action-list"></div><div class="bundlebar"><select id="policy"><option>BEST_EFFORT_INDEPENDENT</option><option>ORDERED_STOP_ON_BLOCKER</option><option>ALL_OR_STOP</option></select><button id="generate">Generate bundle</button><button id="copy">Copy bundle</button><button id="copyPrompt">Copy prompt</button><button id="download">Download JSON</button></div><pre id="bundle"></pre></section>
+</main><script src="app.js"></script></body></html>
