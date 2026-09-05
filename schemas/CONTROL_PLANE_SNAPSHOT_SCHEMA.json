@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "human-control-plane.snapshot.v1",
+  "type": "object",
+  "required": ["schema","snapshot_identity","snapshot_id","generated_at","source_state_identity","source_of_truth","system_state","kernels","works","partitions","learnings","artifacts","gates","warnings","attention_items","suggested_actions","coverage"],
+  "properties": {
+    "schema":{"const":"human-control-plane.snapshot.v1"},
+    "snapshot_identity":{"type":"string","pattern":"^sha256-canonical-payload:[0-9a-f]{64}$"},
+    "snapshot_id":{"type":"string"},
+    "generated_at":{"type":"string"},
+    "source_state_identity":{"type":"string"},
+    "source_of_truth":{"type":"string"},
+    "system_state":{"type":"object"},
+    "kernels":{"type":"array"},
+    "works":{"type":"array"},
+    "partitions":{"type":"array"},
+    "learnings":{"type":"array"},
+    "artifacts":{"type":"array"},
+    "gates":{"type":"array"},
+    "warnings":{"type":"array"},
+    "attention_items":{"type":"array"},
+    "suggested_actions":{"type":"array"},
+    "coverage":{"type":"object"}
+  }
+}
