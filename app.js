@@ -1,6 +1,6 @@
 let DATA=null, CURRENT_BUNDLE=null;
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-async function load(){DATA=await fetch("state/control-plane.json").then(r=>r.json());render();}
+async function load(){const u=`state/control-plane.json?v=${Date.now()}`;const r=await fetch(u,{cache:"no-store",headers:{"Cache-Control":"no-cache"}});if(!r.ok)throw new Error(`Snapshot HTTP ${r.status}`);const text=await r.text();DATA=JSON.parse(text);render();}
 function render(){
  document.querySelector("#snapshot").textContent=`Snapshot ${DATA.snapshot_id} · ${DATA.generated_at}`;
  document.querySelector("#control").textContent=DATA.system_state.control_status;
