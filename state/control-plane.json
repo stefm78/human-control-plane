@@ -1,289 +1,1 @@
-{
-  "schema": "human-control-plane.snapshot.v1",
-  "snapshot_identity": "sha256-canonical-payload:27daecc93b03fafa585ee95b6d67e6653d395cc455166a4b0520d6cd92ae4ac3",
-  "snapshot_id": "HCP-SNAP-20260905T125829Z",
-  "generated_at": "2026-09-05T12:58:29Z",
-  "source_state_identity": "sha256-canonical-payload:8807e70d5d8af7f1af67d03a40d08cb2cd32d83eb1368ba260bd3076e8154415",
-  "source_of_truth": "ChatGPT Library /CONTROL_PLANE_STATE.json",
-  "system_state": {
-    "control_status": "ESTABLISHED",
-    "ucp_version": "1.0",
-    "uao_version": "1.4",
-    "uao_identity": "sha256:786d9feec326d816259d11b66af7acbc1f3de67636a99bffb1a1392303ab24c5",
-    "authority_delta": "NONE",
-    "direct_web_execution": false,
-    "git_is_authority": false,
-    "publication": {
-      "repository": "stefm78/human-control-plane",
-      "branch": "main",
-      "pages_enabled_by_human": true,
-      "pages_url": "https://stefm78.github.io/human-control-plane/",
-      "status": "PUBLISHED_REPOSITORY",
-      "render_status": "UNVERIFIED_EXTERNALLY",
-      "authority": "PROJECTION_ONLY"
-    }
-  },
-  "kernels": [
-    {
-      "name": "UCP",
-      "spec_id": "UCP-CONTROL-PLANE",
-      "version": "1.0",
-      "status": "ACTIVE",
-      "canonical_file": "UCP_ACTIVE.md",
-      "state_identity": "sha256:db37558b20e683ca13f5c5cf77a91b211f263c8c2565b91832a5ceb0040d3513",
-      "role": "ROOT",
-      "entrypoint": "INTERNAL_BOOTSTRAP",
-      "authority_class": "A6",
-      "rollback_available": false,
-      "freshness": "VERIFIED",
-      "provenance": {
-        "library_file_id": "file_000000007a3082439ef731d3a00f0074"
-      }
-    },
-    {
-      "name": "UAO",
-      "spec_id": "UAO-KERNEL",
-      "version": "1.4",
-      "status": "ACTIVE",
-      "canonical_file": "UAO_ACTIVE.md",
-      "state_identity": "sha256:786d9feec326d816259d11b66af7acbc1f3de67636a99bffb1a1392303ab24c5",
-      "role": "ORCHESTRATE",
-      "entrypoint": "INTERNAL_BOOTSTRAP",
-      "authority_class": "A0-A3",
-      "rollback_available": true,
-      "freshness": "VERIFIED",
-      "provenance": {
-        "library_file_id": "file_00000000a0148210ab4f7da86451a185"
-      }
-    },
-    {
-      "name": "UAR",
-      "spec_id": "UAR-KERNEL",
-      "version": "1.0",
-      "status": "ACTIVE",
-      "canonical_file": "UAR_ACTIVE.md",
-      "state_identity": "sha256:f0ad46c5a851ae99f61ab759e315a7cdb282de44d233fa1fd648e1da78382c94",
-      "role": "KNOW",
-      "entrypoint": "/research",
-      "authority_class": "A0",
-      "rollback_available": false,
-      "freshness": "VERIFIED",
-      "provenance": {
-        "library_file_id": "file_00000000f37c821093486fe6271107c9"
-      }
-    },
-    {
-      "name": "UAS",
-      "spec_id": "UAS-KERNEL",
-      "version": "2.2",
-      "status": "ACTIVE",
-      "canonical_file": "UAS_ACTIVE.md",
-      "state_identity": "sha256:c440a806c4c7a7825e84929e6d58f07923edddfcd1e4e641fa19c9d1ef815ff0",
-      "role": "DECIDE",
-      "entrypoint": "/solve",
-      "authority_class": "A1",
-      "rollback_available": false,
-      "freshness": "VERIFIED",
-      "provenance": {
-        "library_file_id": "file_000000004510824697c86e432dfc0b09"
-      }
-    },
-    {
-      "name": "UAB",
-      "spec_id": "UAB-KERNEL",
-      "version": "1.1",
-      "status": "ACTIVE",
-      "canonical_file": "UAB_ACTIVE.md",
-      "state_identity": "sha256:1bcb52f3939c4cabd26446477de70228a45f7e40ee023aea6c4f5eef49382c40",
-      "role": "DO",
-      "entrypoint": "/build",
-      "authority_class": "A0-A3",
-      "rollback_available": false,
-      "freshness": "VERIFIED",
-      "provenance": {
-        "library_file_id": "file_0000000040f481f4bfe5e48513cef332"
-      }
-    },
-    {
-      "name": "UAA",
-      "spec_id": "UAA-KERNEL",
-      "version": "1.0",
-      "status": "ACTIVE",
-      "canonical_file": "UAA_ACTIVE.md",
-      "state_identity": "sha256:2adc9f4bcef158072cd9226a49a2ec5e402e1b907ced586801841913f7852959",
-      "role": "PROVE_OR_REFUTE",
-      "entrypoint": "/audit",
-      "authority_class": "A0",
-      "rollback_available": false,
-      "freshness": "VERIFIED",
-      "provenance": {
-        "library_file_id": "file_00000000f40081f4a4fa8cc3505d9e3b"
-      }
-    },
-    {
-      "name": "UAL",
-      "spec_id": "UAL-KERNEL",
-      "version": "1.0",
-      "status": "ACTIVE",
-      "canonical_file": "UAL_ACTIVE.md",
-      "state_identity": "sha256:06b59a480f69f16719498b29c56185392549729a7fae59f7fed33d5b42ec4db2",
-      "role": "RETAIN_REUSABLE_LEARNING",
-      "entrypoint": "/learn",
-      "authority_class": "A0-A1",
-      "rollback_available": false,
-      "freshness": "VERIFIED",
-      "provenance": {
-        "library_file_id": "file_000000001090821092b595970a5f4b26"
-      }
-    }
-  ],
-  "works": [
-    {
-      "work_id": "ATLAS-WP-009",
-      "work_name": "M3.0 Authoring Foundation",
-      "project_or_domain": "Learn-it / Project Atlas",
-      "role": "IMPLEMENTATION",
-      "status": "STALE",
-      "last_observed_status": "READY_NOT_STARTED",
-      "current_state_identity": "sha256:420241b271d1fe7606be68ba3541c068bdc5ec44",
-      "parent_work_id": null,
-      "partitions": [],
-      "blocked_by": [],
-      "human_action_required": false,
-      "next_action_candidate": "REFRESH_FROM_CURRENT_AUTHORITATIVE_REPOSITORY_BEFORE_ACTION",
-      "last_material_update": "2026-08-30",
-      "freshness": "STALE",
-      "provenance": {
-        "file_id": "file_000000008f6c81f4a1697ecaba8c7791",
-        "source_kind": "PERSISTENT_HANDOFF"
-      }
-    },
-    {
-      "work_id": "QA-WP-018",
-      "work_name": "M3.0 Independent QA",
-      "project_or_domain": "Learn-it / Project Atlas",
-      "role": "INDEPENDENT_QA",
-      "status": "STALE",
-      "last_observed_status": "ORACLE_READY_PRODUCT_HEAD_PENDING",
-      "current_state_identity": "sha256:62fa979833f0e673d04f23a9ec78597a15f7dd7d",
-      "parent_work_id": "ATLAS-WP-009",
-      "partitions": [],
-      "blocked_by": [
-        "ATLAS-WP-009 exact frozen product HEAD"
-      ],
-      "human_action_required": false,
-      "next_action_candidate": "REFRESH_FROM_CURRENT_AUTHORITATIVE_REPOSITORY_BEFORE_ACTION",
-      "last_material_update": "2026-08-30",
-      "freshness": "STALE",
-      "provenance": {
-        "file_id": "file_000000008f6c81f4a1697ecaba8c7791",
-        "source_kind": "PERSISTENT_HANDOFF"
-      }
-    },
-    {
-      "work_id": "DEV-WP-032",
-      "work_name": "Controlled-Time Atlas Navigator",
-      "project_or_domain": "Learn-it / Project Atlas",
-      "role": "DEV_TOOLING",
-      "status": "STALE",
-      "last_observed_status": "READY_NOT_STARTED",
-      "current_state_identity": "sha256:c0015f66cc0a85da142133064d4b795bead862a1",
-      "parent_work_id": null,
-      "partitions": [],
-      "blocked_by": [],
-      "human_action_required": false,
-      "next_action_candidate": "REFRESH_FROM_CURRENT_AUTHORITATIVE_REPOSITORY_BEFORE_ACTION",
-      "last_material_update": "2026-08-30",
-      "freshness": "STALE",
-      "provenance": {
-        "file_id": "file_000000008f6c81f4a1697ecaba8c7791",
-        "source_kind": "PERSISTENT_HANDOFF"
-      }
-    },
-    {
-      "work_id": "QA-WP-019",
-      "work_name": "Controlled-Time Independent QA",
-      "project_or_domain": "Learn-it / Project Atlas",
-      "role": "INDEPENDENT_QA",
-      "status": "STALE",
-      "last_observed_status": "ORACLE_READY_DEV_HEAD_PENDING",
-      "current_state_identity": "sha256:efe215a085c4664a26d63ec282ff7b19221e9c9d",
-      "parent_work_id": "DEV-WP-032",
-      "partitions": [],
-      "blocked_by": [
-        "DEV-WP-032 exact frozen dev HEAD"
-      ],
-      "human_action_required": false,
-      "next_action_candidate": "REFRESH_FROM_CURRENT_AUTHORITATIVE_REPOSITORY_BEFORE_ACTION",
-      "last_material_update": "2026-08-30",
-      "freshness": "STALE",
-      "provenance": {
-        "file_id": "file_000000008f6c81f4a1697ecaba8c7791",
-        "source_kind": "PERSISTENT_HANDOFF"
-      }
-    }
-  ],
-  "partitions": [],
-  "learnings": [],
-  "artifacts": [
-    {
-      "artifact_id": "UCP_ACTIVE(1).md",
-      "classification": "ACTIVE",
-      "subtype": "NONCANONICAL_ACTIVE_LOOKING_ARTIFACT",
-      "status": "NONCANONICAL",
-      "disposition": "INSPECT_BEFORE_ANY_CLEANUP",
-      "provenance": {
-        "file_id": "file_000000006e7081f49ec18ec8eefb34f9"
-      }
-    },
-    {
-      "artifact_id": "UAO_ACTIVE(1).md",
-      "classification": "ACTIVE",
-      "subtype": "NONCANONICAL_ACTIVE_LOOKING_ARTIFACT",
-      "status": "NONCANONICAL",
-      "disposition": "INSPECT_BEFORE_ANY_CLEANUP",
-      "provenance": {
-        "file_id": "file_0000000013008210b5354c307b197ee9"
-      }
-    },
-    {
-      "artifact_id": "UAO_ACTIVE(2).md",
-      "classification": "ACTIVE",
-      "subtype": "NONCANONICAL_ACTIVE_LOOKING_ARTIFACT",
-      "status": "NONCANONICAL",
-      "disposition": "INSPECT_BEFORE_ANY_CLEANUP",
-      "provenance": {
-        "file_id": "file_00000000ee448243a1a4fe29508985b0"
-      }
-    },
-    {
-      "artifact_id": "UAR_ACTIVE(1).md",
-      "classification": "ACTIVE",
-      "subtype": "NONCANONICAL_ACTIVE_LOOKING_ARTIFACT",
-      "status": "NONCANONICAL",
-      "disposition": "INSPECT_BEFORE_ANY_CLEANUP",
-      "provenance": {
-        "file_id": "file_00000000401c81f49ff395171c3c8801"
-      }
-    },
-    {
-      "artifact_id": "UAL_ACTIVE(1).md",
-      "classification": "ACTIVE",
-      "subtype": "NONCANONICAL_ACTIVE_LOOKING_ARTIFACT",
-      "status": "NONCANONICAL",
-      "disposition": "INSPECT_BEFORE_ANY_CLEANUP",
-      "provenance": {
-        "file_id": "file_0000000065d08210b8fc5c2be4ef71df"
-      }
-    },
-    {
-      "artifact_id": "UAO_ARCHIVE_1.2.md",
-      "classification": "ARCHIVE",
-      "status": "HISTORICAL",
-      "disposition": "DURABLE_UNTIL_HYGIENE_REVIEW",
-      "provenance": {
-        "file_id": "file_0000000036e881f4acb48dda7f4e936c"
-      }
-    },
-    {
-      "artifact_id": "UAO—ĞTÒU‘WÌKŒË›Y‹ˆ˜Û\ÜÚYšXØ][ÛˆˆTÒU‘H‹ˆœİ]\Èˆ•‘T’Q’QQ‹ˆœİ]WÚY[]HˆœÚLMŒLLXÌÙÍMÙ™MÍXMØNXÎYÍŒŒÙŒNXYÎÎLNLNM˜˜NÌ˜H‹ˆ™\ÜÜÚ][Ûˆˆ‘TP“WÔ“ÓPÒ×ÓS‘PQÑH‹ˆœ›İ™[˜[˜ÙHˆÂˆ™š[WÚYˆ™š[WÌ˜ØLÙLŒ™ŒÈ‚ˆBˆKˆÂˆ˜\Y˜XİÚYˆ•PSåõ$ôÄÄ$4µóã"æÖB"À¢&6Æ76–f–6F–öâ#¢%$ôÄÄ$4²"À¢'7FGW2#¢$„•5Dõ$”4Â"À¢&F—7÷6—F–öâ#¢%$Ud”Uuõ$TETäDä5’"À¢'&÷fVææ6R#¢°¢&f–ÆUö–B#¢&f–ÆUócvCƒ#Cc†#†6c–fC#S6F ¢Ğ¢ÒÀ¢°¢&'F–f7Eö–B#¢%Tù}I=11	-|Ä¸Ì¹µˆ°(€€€€€€‰±…ÍÍ¥™¥…Ñ¥½¸ˆè€‰I=11	,ˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰YI%%ˆ°(€€€€€€‰ÍÑ…Ñ•}¥‘•¹Ñ¥Ñäˆè€‰Í¡„ÈÔØèÄÀØäÅŒÈàÍÜÔØİ™ÔÜÑ…„İ„åŒàÅ˜áŒĞÀÈÁˆÍ˜Äá……˜ÜàÜäÄá˜ØØàÈäÄá”Ù‰„àÌÉ„ˆ°(€€€€€€‰‘¥ÍÁ½Í¥Ñ¥½¸ˆè€‰UI	1}UII9Q}I=11	,ˆ°(€€€€€€‰ÁÉ½Ù•¹…¹”ˆèì(€€€€€€€€‰™¥±•}¥ˆè€‰™¥±•|ÀÀÀÀÀÀÀÀÄå”ĞàÅ˜ĞåÔá˜ÌÄÍ”É„ÌÑÁˆ(€€€€€ô(€€€ô°(€€€ì(€€€€€€‰…ÉÑ¥™…Ñ}¥ˆè€‰U=}Q%Y|Ä¸Ñ}9%Q¹µˆ°(€€€€€€‰±…ÍÍ¥™¥…Ñ¥½¸ˆè€‰9%Qˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰!%MQ=I%0ˆ°(€€€€€€‰‘¥ÍÁ½Í¥Ñ¥½¸ˆè€‰AI=5=Q}9%Q}IY%]}IQ9Q%=8ˆ°(€€€€€€‰ÁÉ½Ù•¹…¹”ˆèì(€€€€€€€€‰™¥±•}¥ˆè€‰™¥±•|ÀÀÀÀÀÀÀÀØÈÀààÅ˜ÑˆÄÄÈĞäİ„ÜàÜÉ‰ˆÈÔˆ(€€€€€ô(€€€ô°(€€€ì(€€€€€€‰…ÉÑ¥™…Ñ}¥ˆè€‰=9QI=1}A19}M9AM!=P¹©Í½¸ˆ°(€€€€€€‰±…ÍÍ¥™¥…Ñ¥½¸ˆè€‰M9AM!=Pˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰MQ1ˆ°(€€€€€€‰ÍÑ…Ñ•}¥‘•¹Ñ¥Ñäˆè€‰Í¡„ÈÔØèÄÄÙ˜äÈÌàÔÔÉ™ÀÄàØÔÍ”ÄäÅŒÍ•„Ğå•˜ÜàÁŒØÄÔåŒÕ”ÔÍ‘İ„İŒÀå…àÑ˜ÈÔàÀÜÈˆ°(€€€€€€‰‘¥ÍÁ½Í¥Ñ¥½¸ˆè€‰IA1}]%Q!}A!Må	}M9AM!=Pˆ°(€€€€€€‰ÁÉ½Ù•¹…¹”ˆèì(€€€€€€€€‰™¥±•}¥ˆè€‰™¥±•|ÀÀÀÀÀÀÀÁ•”ĞàÅ˜ĞäÔÜäÌØÔÅ‰™‘ˆÅ˜ˆ(€€€€€ô(€€€ô°(€€€ì(€€€€€€‰…ÉÑ¥™…Ñ}¥ˆè€‰!9=YI}AI=)Q}Q1M}4Í}Q%5}9Y%Q=I|ÈÀÈØ´Àà´ÌÀ¹µˆ°(€€€€€€‰±…ÍÍ¥™¥…Ñ¥½¸ˆè€‰!9=ˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰MQ1ˆ°(€€€€€€‰ÍÑ…Ñ•}¥‘•¹Ñ¥Ñäˆè€‰Í¡„ÈÔØèÈá˜Àå‰ŒÍ˜àİ„á•ØÄİ„ÌÑ”ÜÄÍ˜Õ˜Õ„ØÌÉŒÔá”ÙŒåØØĞØĞÈÜÕ„ÌÉˆå‰ŒÄå”àİ˜Äˆ°(€€€€€€‰‘¥ÍÁ½Í¥Ñ¥½¸ˆè€‰-A}M}AI=Y99}9=Q}UII9Q}UQ!=I%Qdˆ°(€€€€€€‰ÁÉ½Ù•¹…¹”ˆèì(€€€€€€€€‰™¥±•}¥ˆè€‰™¥±•|ÀÀÀÀÀÀÀÀá˜ÙŒàÅ˜Ñ„ÄØäİ•…‰„áŒÜÜäÄˆ(€€€€€ô(€€€ô°(€€€ì(€€€€€€‰…ÉÑ¥™…Ñ}¥ˆè€‰Ñ•±•µ…ÅÕ”´ÄÜàµ¡Õµ…¸µÉ•Ù¥•Ü¹©Í½¸ˆ°(€€€€€€‰±…ÍÍ¥™¥…Ñ¥½¸ˆè€‰!%MQ=I%0ˆ°(€€€€€€‰ÍÕ‰ÑåÁ”ˆè€‰!U59}IY%]}Y%9ˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰YI%%}I=5}AIM}1%	IIe}=9Q9Pˆ°(€€€€€€‰‘¥ÍÁ½Í¥Ñ¥½¸ˆè€‰-A}M}Y%9ˆ°(€€€€€€‰ÁÉ½Ù•¹…¹”ˆèì(€€€€€€€€‰™¥±•}¥ˆè€‰™¥±•|ÀÀÀÀÀÀÀÀØÜáŒàÈĞÙ‰‰ˆĞÅ”Å•ˆÕŒĞÄäĞàˆ(€€€€€ô(€€€ô°(€€€ì(€€€€€€‰…ÉÑ¥™…Ñ}¥ˆè€‰%Q}AU	1%Q%=8éÍÑ•™´Üà½¡Õµ…¸µ½¹ÑÉ½°µÁ±…¹”ˆ°(€€€€€€‰±…ÍÍ¥™¥…Ñ¥½¸ˆè€‰M9AM!=Pˆ°(€€€€€€‰ÍÕ‰ÑåÁ”ˆè€‰AU	1%M!}AI=)Q%=9}IA=M%Q=Idˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰AU	1%M!ˆ°(€€€€€€‰ÍÑ…Ñ•}¥‘•¹Ñ¥Ñäˆè€‰É•Á½Í¥Ñ½ÉäéÍÑ•™´Üà½¡Õµ…¸µ½¹ÑÉ½°µÁ±…¹•µ…¥¸ˆ°(€€€€€€‰½İ¹•Èˆè€‰!U59}=9QI=1}A19ˆ°(€€€€€€‰ÁÕÉÁ½Í”ˆè€‰AÕ‰±¥Í¡•É•…µ½É¥•¹Ñ•ÁÉ½©•Ñ¥½¸½˜=9QI=1}A19}M9AM!=Pˆ°(€€€€€€‰±¥™•Ñ¥µ”ˆè€‰UI	1}U9Q%1}MUAIMˆ°(€€€€€€‰‘¥ÍÁ½Í¥Ñ¥½¸ˆè€‰UAQ}	e}aA1%%Q}AU	1%Q%=9}=91dˆ°(€€€€€€‰ÁÉ½Ù•¹…¹”ˆèì(€€€€€€€€‰É•Á½Í¥Ñ½Éäˆè€‰ÍÑ•™´Üà½¡Õµ…¸µ½¹ÑÉ½°µÁ±…¹”ˆ°(€€€€€€€€‰‰É…¹ ˆè€‰µ…¥¸ˆ°(€€€€€€€€‰ÁÕ‰±¥…Ñ¥½¹}µ½‘”ˆè€‰aA1%%Q}%Q}AI=)Q%=8ˆ(€€€€€ô(€€€ô(€t°(€€‰…Ñ•Ìˆèmt°(€€‰İ…É¹¥¹Ìˆèl(€€€ì(€€€€€€‰İ…É¹¥¹}¥ˆè€‰\µ-I90µ9=99=9%0µQ%Yˆ°(€€€€€€‰Í•Ù•É¥Ñäˆè€‰]I9%9ˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰YI%%ˆ°(€€€€€€‰µ•ÍÍ…”ˆè€‰9½¹…¹½¹¥…°­•É¹•°½Á¥•Ìİ¥Ñ Q%Yµ±½½­¥¹œÍ•µ…¹Ñ¥Ì•á¥ÍĞì•á…Ğ…¹½¹¥…°™¥±•¹…µ•ÌÉ•µ…¥¸Õ¹…µ‰¥Õ½ÕÌ¸ˆ(€€€ô°(€€€ì(€€€€€€‰İ…É¹¥¹}¥ˆè€‰\µ]=I,µ=YIµAIQ%0ˆ°(€€€€€€‰Í•Ù•É¥Ñäˆè€‰]I9%9ˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰YI%%ˆ°(€€€€€€‰µ•ÍÍ…”ˆè€‰=¹±äİ½É­Ìİ¥Ñ Á•ÉÍ¥ÍÑ•¹Ğ•áÁ±¥¥Ğ¥‘•¹Ñ¥Ñ¥•Ì…É”É•¥ÍÑ•É•ì­¹½İ¸½¹Ù•ÉÍ…Ñ¥½¸µ½¹±äİ½É¬¥Ì¥¹Ñ•¹Ñ¥½¹…±±ä½µ¥ÑÑ•¸ˆ(€€€ô°(€€€ì(€€€€€€‰İ…É¹¥¹}¥ˆè€‰\µQ1Lµ]=I-LµMQ1ˆ°(€€€€€€‰Í•Ù•É¥Ñäˆè€‰]I9%9ˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰YI%%ˆ°(€€€€€€‰µ•ÍÍ…”ˆè€‰Ñ±…Ìİ½É¬µÁ…­…”½‰Í•ÉÙ…Ñ¥½¹Ì™É½´Ñ¡”€ÈÀÈØ´Àà´ÌÀ¡…¹‘½Ù•È…É”ÍÑ…±”É•±…Ñ¥Ù”Ñ¼±…Ñ•ÈÁ½ÍĞµ4Ì¸Ğ•Ù¥‘•¹”ì¹¼•á•ÕÑ¥½¸Í¡½Õ±ÕÍ”Ñ¡•´‰•™½É”É•™É•Í ¸ˆ(€€€ô°(€€€ì(€€€€€€‰İ…É¹¥¹}¥ˆè€‰\µ1I9%9µI%MQIdµ	M9Pˆ°(€€€€€€‰Í•Ù•É¥Ñäˆè€‰%9<ˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰YI%%ˆ°(€€€€€€‰µ•ÍÍ…”ˆè€‰9¼…¹½¹¥…°U0…ÉÑ¥™…Ğµ±•…É¹¥¹œÉ•¥ÍÑÉäİ…Ì™½Õ¹¥¸Ñ¡”‰½Õ¹‘•1¥‰É…Éä¥¹ÍÁ•Ñ¥½¸ì¹¼±•…É¹¥¹Ìİ•É”¥¹™•ÉÉ•™É½´½¹Ù•ÉÍ…Ñ¥½¹Ì½ÈÁÉ½µÁÑÌ¸ˆ(€€€ô°(€€€ì(€€€€€€‰İ…É¹¥¹}¥ˆè€‰\µAIQ%Q%=8µ=YIµU9-9=]8ˆ°(€€€€€€‰Í•Ù•É¥Ñäˆè€‰%9<ˆ°(€€€€€€‰ÍÑ…ÑÕÌˆè€‰YI%%ˆ°(€€€€€€‰µ•ÍÍ…”ˆè€‰9¼Á•ÉÍ¥ÍÑ•¹ĞU<AIQ%Q%=9}%É•½É‘Ìİ•É”•ÍÑ…‰±¥Í¡•ì±…¹•Ì½İ½É¬Á…­…•Ìİ•É”¹½ĞÉ•±…‰•±•…ÌÁ…ÉÑ¥Ñ¥½¹Ì¸ˆ(€€€ô(€t°(€€‰…ÑÑ•¹Ñ¥½¹}¥Ñ•µÌˆèl(€€€ì(€€€€€€‰…ÑÑ•¹Ñ¥½¹}¥ˆè€‰QPµMQ1µQ1Lˆ°(€€€€€€‰ÁÉ¥½É¥Ñäˆè€Ä°(€€€€€€‰­¥¹ˆè€‰MQ1}MQQˆ°(€€€€€€‰±…‰•°ˆè€‰I…™É‡¹¡¥È±•Ìİ½É¬Á…­…•ÌÑ±…ÌÁ•ÉÍ¥ÍÑ…¹ÑÌ…Ù…¹ĞÑ½ÕÑ”…Ñ¥½¸½Ã¥É…Ñ¥½¹¹•±±”¸ˆ°(€€€€€€‰É•…Í½¸ˆè€‰•É¹§¡É”½‰Í•ÉÙ…Ñ¥½¸Á•ÉÍ¥ÍÑ…¹Ñ”•¹É•¥ÍÑË¥”è€ÈÀÈØ´Àà´ÌÀì…ÉÑ•™…ÑÌÁ½ÍĞµ4Ì¸ĞÁ±ÕÌË¥•¹ÑÌ•á¥ÍÑ•¹Ğ¸ˆ°(€€€€€€‰…Ñ¥½¹}¥ˆè€‰PµIIM µQ1Lµ]=I-Lˆ(€€€ô°(€€€ì(€€€€€€‰…ÑÑ•¹Ñ¥½¹}¥ˆè€‰QPµ-I90µ!e%9ˆ°(€€€€€€‰ÁÉ¥½É¥Ñäˆè€È°(€€€€€€‰­¥¹ˆè€‰!e%9ˆ°(€€€€€€‰±…‰•°ˆè€‰%¹ÍÁ•Ñ•È±•Ì½Á¥•Ì‘”­•É¹•±Ì¹½¸…¹½¹¥ÅÕ•ÌÁ½ÉÑ…¹ĞÕ¹”…ÁÁ…É•¹”Q%Y¸ˆ°(€€€€€€‰É•…Í½¸ˆè€‰±±•Ì¹”Í½¹ĞÁ…Ì…¹½¹¥ÅÕ•Ìµ…¥ÌÁ•ÕÙ•¹ĞÑÉ½Õ‰±•È³Še¥¹ÍÁ•Ñ¥½¸¡Õµ…¥¹”¸ˆ°(€€€€€€‰…Ñ¥½¹}¥ˆè€‰Pµ%9MAPµ-I90µ=A%Lˆ(€€€ô°(€€€ì(€€€€€€‰…ÑÑ•¹Ñ¥½¹}¥ˆè€‰QPµ1I9%9µ=YIˆ°(€€€€€€‰ÁÉ¥½É¥Ñäˆè€Ì°(€€€€€€‰­¥¹ˆè€‰=YIˆ°(€€€€€€‰±…‰•°ˆè€‰1•…É¹¥¹œI•¥ÍÑÉäU0…‰Í•¹Ğ¸ˆ°(€€€€€€‰É•…Í½¸ˆè€‰ÕÕ¸±•…É¹¥¹œÁ•ÉÍ¥ÍÑ…¹ĞU0»Še•ÍĞ¥¹Ù•¹Ñ½É¥…‰±”‘”™‡½¸“¥™•¹‘…‰±”…Õ©½ÕÉ“Še¡Õ¤¸ˆ°(€€€€€€‰…Ñ¥½¹}¥ˆè¹Õ±°(€€€ô(€t°(€€‰ÍÕ•ÍÑ•‘}…Ñ¥½¹Ìˆèl(€€€ì(€€€€€€‰…Ñ¥½¹}¥ˆè€‰PµIIM µQ1Lµ]=I-Lˆ°(€€€€€€‰Í½ÕÉ•}Í¹…ÁÍ¡½Ñ}¥ˆè€‰!@µM9@´ÈÀÈØÀäÀÕPÄÈÔàÈåhˆ°(€€€€€€‰…Ñ¥½¹}ÑåÁ”ˆè€‰IY%\ˆ°(€€€€€€‰Ñ…É•Ñ}ÑåÁ”ˆè€‰]=I-}MPˆ°(€€€€€€‰Ñ…É•Ñ}¥ˆè€‰1I9%Q}Q1M}MQ1}]=I-Lˆ°(€€€€€€‰Ñ…É•Ñ}ÍÑ…Ñ•}¥‘•¹Ñ¥Ñäˆè€‰Í¡„ÈÔØèØÑ„ÀÄÔå”ĞĞÑ‰ˆĞåŒÀÌÀØÔå™”ØØÁ”ÄÄÀÄÈàÙ…˜Ğå…Œå˜Àá‰…”ÄäÀÈÀİàÜÑˆÅ„á„ˆ°(€€€€€€‰±…‰•°ˆè€‰I…™É‡¹¡¥È±•Ìƒ¥Ñ…ÑÌÑ±…ÌÁ•ÉÍ¥ÍÑ…¹ÑÌˆ°(€€€€€€‰É•…Í½¸ˆè€‰1•ÌÅÕ…ÑÉ”İ½É¬Á…­…•Ì•¹É•¥ÍÑË¥ÌÁÉ½Ù¥•¹¹•¹Ğ“ŠeÕ¸¡…¹‘½Ù•È€ÈÀÈØ´Àà´ÌÀ‘•Ù•¹ÔÍÑ…±”¸ˆ°(€€€€€€‰Í½Á”ˆè€‰AI=)Pé1I9%P½Q1Lˆ°(€€€€€€‰É•ÅÕ•ÍÑ•‘}µ½‘”ˆè€‰%9MAPˆ°(€€€€€€‰…ÕÑ¡½É¥Ñå}•áÁ•Ñ•ˆè€‰Àˆ°(€€€€€€‰µ…Ñ•É¥…±}¡…¹•}¡¥¹Ğˆè€‰Àˆ°(€€€€€€‰É•ÅÕ¥É•‘}…Ñ•}¡¥¹Ğˆè€‰Àˆ°(€€€€€€‰‘•Á•¹‘•¹¥•Ìˆèmt°(€€€€€€‰•áÁ•Ñ•‘}É•ÍÕ±Ğˆè€‰I•µÁ±…•ÈÕ¹¥ÅÕ•µ•¹Ğ±•Ì½‰Í•ÉÙ…Ñ¥½¹ÌÍÑ…±”Á…È‘•Ìƒ¥Ñ…ÑÌ…ÑÕ•±ÌÁÉ½ÕÛ¥Ì°½Ô±•Ì±…¥ÍÍ•ÈU9-9=]8¸ˆ°(€€€€€€‰É•Ù•ÉÍ¥‰¥±¥Ñäˆè€‰I}=91e}U9Q%1}aA1%%Q}UAQˆ°(€€€€€€‰É••¹ÑÉå}¥˜ˆè€‰U¹”µÕÑ…Ñ¥½¸¥Ñ!Õˆ½Ô1¥‰É…Éä•ÍĞÁÉ½Á½Ï¥”¸ˆ(€€€ô°(€€€ì(€€€€€€‰…Ñ¥½¹}¥ˆè€‰Pµ%9MAPµ-I90µ=A%Lˆ°(€€€€€€‰Í½ÕÉ•}Í¹…ÁÍ¡½Ñ}¥ˆè€‰!@µM9@´ÈÀÈØÀäÀÕPÄÈÔàÈåhˆ°(€€€€€€‰…Ñ¥½¹}ÑåÁ”ˆè€‰%9MAPˆ°(€€€€€€‰Ñ…É•Ñ}ÑåÁ”ˆè€‰IQ%Q}MPˆ°(€€€€€€‰Ñ…É•Ñ}¥ˆè€‰9=99=9%1}Q%Y}1==-%9}-I91}=A%Lˆ°(€€€€€€‰Ñ…É•Ñ}ÍÑ…Ñ•}¥‘•¹Ñ¥Ñäˆè€‰Í¡„ÈÔØèÉĞÄÁ‰ˆÌÀÌÜÕ˜å••”ÄàÔäåŒÜØÄÙ„Á•ĞÍŒÈİ‰Õ™˜ÈÕˆáŒØÕˆÜÑ”Èá•ŒäÈÕ„Á‘„Ğˆ°(€€€€€€‰±…‰•°ˆè€‰%¹ÍÁ•Ñ•È±•Ì½Á¥•Ì‘”­•É¹•±Ì¹½¸…¹½¹¥ÅÕ•Ìˆ°(€€€€€€‰É•…Í½¸ˆè€‰A±ÕÍ¥•ÕÉÌ½Á¥•ÌÁ½ÉÑ•¹ĞÕ¹”Ï¥µ…¹Ñ¥ÅÕ”Q%YÍ…¹Ìƒ©ÑÉ”±•Ì™¥¡¥•ÉÌ…¹½¹¥ÅÕ•Ì•á…ÑÌ¸ˆ°(€€€€€€‰Í½Á”ˆè€‰MeMQ4½-I91}!e%9ˆ°(€€€€€€‰É•ÅÕ•ÍÑ•‘}µ½‘”ˆè€‰%9MAPˆ°(€€€€€€‰…ÕÑ¡½É¥Ñå}•áÁ•Ñ•ˆè€‰Àˆ°(€€€€€€‰µ…Ñ•É¥…±}¡…¹•}¡¥¹Ğˆè€‰Àˆ°(€€€€€€‰É•ÅÕ¥É•‘}…Ñ•}¡¥¹Ğˆè€‰Àˆ°(€€€€€€‰‘•Á•¹‘•¹¥•Ìˆèmt°(€€€€€€‰•áÁ•Ñ•‘}É•ÍÕ±Ğˆè€‰±…ÍÍ•È-@½I!%Y½1Q}9%QÍ…¹ÌÍÕÁÁÉ¥µ•È…ÕÑ½µ…Ñ¥ÅÕ•µ•¹Ğ¸ˆ°(€€€€€€‰É•Ù•ÉÍ¥‰¥±¥Ñäˆè€‰I}=91dˆ°(€€€€€€‰É••¹ÑÉå}¥˜ˆè€‰U¹”ÍÕÁÁÉ•ÍÍ¥½¸½ÔÕ¸É•¹½µµ…”•ÍĞÁÉ½Á½Ï¤¸ˆ(€€€ô(€t°(€€‰½Ù•É…”ˆèì(€€€€‰­•É¹•±Ìˆèì(€€€€€€‰ÍÑ…ÑÕÌˆè€‰YI%%ˆ°(€€€€€€‰É•¥ÍÑ•É•ˆè€Ü°(€€€€€€‰¹½Ñ”ˆè€‰±°…¹½¹¥…°…Ñ¥Ù”­•É¹•±Ì‘¥É•Ñ±äÉ•……¹¡…Í¡•¸ˆ(€€€ô°(€€€€‰İ½É­Ìˆèì(€€€€€€‰ÍÑ…ÑÕÌˆè€‰AIQ%0ˆ°(€€€€€€‰É•¥ÍÑ•É•ˆè€Ğ°(€€€€€€‰¹½Ñ”ˆè€‰A•ÉÍ¥ÍÑ•¹Ğ•áÁ±¥¥Ğ¥‘•¹Ñ¥Ñ¥•Ì½¹±äìÍÑ…±”½‰Í•ÉÙ…Ñ¥½¹Ì…É”¹½ĞÑÉ•…Ñ•…ÌÕÉÉ•¹Ğ¸ˆ(€€€ô°(€€€€‰Á…ÉÑ¥Ñ¥½¹Ìˆèì(€€€€€€‰ÍÑ…ÑÕÌˆè€‰U9-9=]8ˆ°(€€€€€€‰É•¥ÍÑ•É•ˆè€À°(€€€€€€‰¹½Ñ”ˆè€‰9¼Á•ÉÍ¥ÍÑ•¹ĞU<AIQ%Q%=9}%É•½É‘Ì•ÍÑ…‰±¥Í¡•¸ˆ(€€€ô°(€€€€‰±•…É¹¥¹Ìˆèì(€€€€€€‰ÍÑ…ÑÕÌˆè€‰	M9Pˆ°(€€€€€€‰É•¥ÍÑ•É•ˆè€À°(€€€€€€‰¹½Ñ”ˆè€‰9¼…¹½¹¥…°U0…ÉÑ¥™…Ğµ±•…É¹¥¹œÉ•¥ÍÑÉä™½Õ¹ìÁÉ½µÁĞ½•‘Õ…Ñ¥½¹…°€±•…É¹¥¹œœ™¥±•Ì…É”¹½ĞU0±•…É¹¥¹Ì¸ˆ(€€€ô°(€€€€‰…ÉÑ¥™…ÑÌˆèì(€€€€€€‰ÍÑ…ÑÕÌˆè€‰AIQ%0ˆ°(€€€€€€‰É•¥ÍÑ•É•ˆè€ÄĞ°(€€€€€€‰¹½Ñ”ˆè€‰=¹±ä½¹ÑÉ½°µÉ•±•Ù…¹Ğ…ÉÑ¥™…ÑÌ¥¹Ù•¹Ñ½É¥•ì1¥‰É…Éä¥Ì¹½Ğ•á¡…ÕÍÑ¥Ù•±ä…Ñ…±½Õ•¸ˆ(€€€ô°(€€€€‰½¹Ù•ÉÍ…Ñ¥½¹}¡¥ÍÑ½Éå}ÕÍ•‘}…Í}…¹½¹¥…°ˆè™…±Í”(€ô)ô(
+{"schema":"human-control-plane.snapshot.v1","snapshot_identity":"sha256-canonical-payload:27daecc93b03fafa585ee95b6d67e6653d395cc455166a4b0520d6cd92ae4ac3","snapshot_id":"HCP-SNAP-20260905T125829Z","generated_at":"2026-09-05T12:58:29Z","source_state_identity":"sha256-canonical-payload:8807e70d5d8af7f1af67d03a40d08cb2cd32d83eb1368ba260bd3076e8154415","source_of_truth":"ChatGPT Library /CONTROL_PLANE_STATE.json","system_state":{"control_status":"ESTABLISHED","ucp_version":"1.0","uao_version":"1.4","uao_identity":"sha256:786d9feec326d816259d11b66af7acbc1f3de67636a99bffb1a1392303ab24c5","authority_delta":"NONE","direct_web_execution":false,"git_is_authority":false},"kernels":[{"name":"UCP","spec_id":"UCP-CONTROL-PLANE","version":"1.0","status":"ACTIVE","canonical_file":"UCP_ACTIVE.md","state_identity":"sha256:db37558b20e683ca13f5c5cf77a91b211f263c8c2565b91832a5ceb0040d3513","role":"ROOT","entrypoint":"INTERNAL_BOOTSTRAP","authority_class":"A6","rollback_available":false,"freshness":"VERIFIED","provenance":{"library_file_id":"file_000000007a3082439ef731d3a00f0074"}},{"name":"UAO","spec_id":"UAO-KERNEL","version":"1.4","status":"ACTIVE","canonical_file":"UAO_ACTIVE.md","state_identity":"sha256:786d9feec326d816259d11b66af7acbc1f3de67636a99bffb1a1392303ab24c5","role":"ORCHESTRATE","entrypoint":"INTERNAL_BOOTSTRAP","authority_class":"A0-A3","rollback_available":true,"freshness":"VERIFIED","provenance":{"library_file_id":"file_00000000a0148210ab4f7da86451a185"}},{"name":"UAR","spec_id":"UAR-KERNEL","version":"1.0","status":"ACTIVE","canonical_file":"UAR_ACTIVE.md","state_identity":"sha256:f0ad46c5a851ae99f61ab759e315a7cdb282de44d233fa1fd648e1da78382c94","role":"KNOW","entrypoint":"/research","authority_class":"A0","rollback_available":false,"freshness":"VERIFIED","provenance":{"library_file_id":"file_00000000f37c821093486fe6271107c9"}},{"name":"UAS","spec_id":"UAS-KERNEL","version":"2.2","status":"ACTIVE","canonical_file":"UAS_ACTIVE.md","state_identity":"sha256:c440a806c4c7a7825e84929e6d58f07923edddfcd1e4e641fa19c9d1ef815ff0","role":"DECIDE","entrypoint":"/solve","authority_class":"A1","rollback_available":false,"freshness":"VERIFIED","provenance":{"library_file_id":"file_000000004510824697c86e432dfc0b09"}},{"name":"UAB","spec_id":"UAB-KERNEL","version":"1.1","status":"ACTIVE","canonical_file":"UAB_ACTIVE.md","state_identity":"sha256:1bcb52f3939c4cabd26446477de70228a45f7e40ee023aea6c4f5eef49382c40","role":"DO","entrypoint":"/build","authority_class":"A0-A3","rollback_available":false,"freshness":"VERIFIED","provenance":{"library_file_id":"file_0000000040f481f4bfe5e48513cef332"}},{"name":"UAA","spec_id":"UAA-KERNEL","version":"1.0","status":"ACTIVE","canonical_file":"UAA_ACTIVE.md","state_identity":"sha256:2adc9f4bcef158072cd9226a49a2ec5e402e1b907ced586801841913f7852959","role":"PROVE_OR_REFUTE","entrypoint":"/audit","authority_class":"A0","rollback_available":false,"freshness":"VERIFIED","provenance":{"library_file_id":"file_00000000f40081f4a4fa8cc3505d9e3b"}},{"name":"UAL","spec_id":"UAL-KERNEL","version":"1.0","status":"ACTIVE","canonical_file":"UAL_ACTIVE.md","state_identity":"sha256:06b59a480f69f16719498b29c56185392549729a7fae59f7fed33d5b42ec4db2","role":"RETAIN_REUSABLE_LEARNING","entrypoint":"/learn","authority_class":"A0-A1","rollback_available":false,"freshness":"VERIFIED","provenance":{"library_file_id":"file_000000001090821092b595970a5f4b26"}}],"works":[{"work_id":"ATLAS-WP-009","work_name":"M3.0 Authoring Foundation","project_or_domain":"Learn-it / Project Atlas","role":"IMPLEMENTATION","status":"STALE","last_observed_status":"READY_NOT_STARTED","current_state_identity":"sha256:420241b271d1fe7606be68ba3541c068bdc5ec44","parent_work_id":null,"partitions":[],"blocked_by":[],"human_action_required":false,"next_action_candidate":"REFRESH_FROM_CURRENT_AUTHORITATIVE_REPOSITORY_BEFORE_ACTION","last_material_update":"2026-08-30","freshness":"STALE","provenance":{"file_id":"file_000000008f6c81f4a1697ecaba8c7791","source_kind":"PERSISTENT_HANDOFF"}},{"work_id":"QA-WP-018","work_name":"M3.0 Independent QA","project_or_domain":"Learn-it / Project Atlas","role":"INDEPENDENT_QA","status":"STALE","last_observed_status":"ORACLE_READY_PRODUCT_HEAD_PENDING","current_state_identity":"sha256:62fa979833f0e673d04f23a9ec78597a15f7dd7d","parent_work_id":"ATLAS-WP-009","partitions":[],"blocked_by":["ATLAS-WP-009 exact frozen product HEAD"],"human_action_required":false,"next_action_candidate":"REFRESH_FROM_CURRENT_AUTHORITATIVE_REPOSITORY_BEFORE_ACTION","last_material_update":"2026-08-30","freshness":"STALE","provenance":{"file_id":"file_000000008f6c81f4a1697ecaba8c7791","source_kind":"PERSISTENT_HANDOFF"}},{"work_id":"DEV-WP-032","work_name":"Controlled-Time Atlas Navigator","project_or_domain":"Learn-it / Project Atlas","role":"DEV_TOOLING","status":"STALE","last_observed_status":"READY_NOT_STARTED","current_state_identity":"sha256:c0015f66cc0a85da142133064d4b795bead862a1","parent_work_id":null,"partitions":[],"blocked_by":[],"human_action_required":false,"next_action_candidate":"REFRESH_FROM_CURRENT_AUTHORITATIVE_REPOSITORY_BEFORE_ACTION","last_material_update":"2026-08-30","freshness":"STALE","provenance":{"file_id":"file_000000008f6c81f4a1697ecaba8c7791","source_kind":"PERSISTENT_HANDOFF"}},{"work_id":"QA-WP-019","work_name":"Controlled-Time Independent QA","project_or_domain":"Learn-it / Project Atlas","role":"INDEPENDENT_QA","status":"STALE","last_observed_status":"ORACLE_READY_DEV_HEAD_PENDING","current_state_identity":"sha256:efe215a085c4664a26d63ec282ff7b19221e9c9d","parent_work_id":"DEV-WP-032","partitions":[],"blocked_by":["DEV-WP-032 exact frozen dev HEAD"],"human_action_required":false,"next_action_candidate":"REFRESH_FROM_CURRENT_AUTHORITATIVE_REPOSITORY_BEFORE_ACTION","last_material_update":"2026-08-30","freshness":"STALE","provenance":{"file_id":"file_000000008f6c81f4a1697ecaba8c7791","source_kind":"PERSISTENT_HANDOFF"}}],"partitions":[],"learnings":[],"artifacts":[{"artifact_id":"UCP_ACTIVE(1).md","classification":"ACTIVE","subtype":"NONCANONICAL_ACTIVE_LOOKING_ARTIFACT","status":"NONCANONICAL","disposition":"INSPECT_BEFORE_ANY_CLEANUP","provenance":{"file_id":"file_000000006e7081f49ec18ec8eefb34f9"}},{"artifact_id":"UAO_ACTIVE(1).md","classification":"ACTIVE","subtype":"NONCANONICAL_ACTIVE_LOOKING_ARTIFACT","status":"NONCANONICAL","disposition":"INSPECT_BEFORE_ANY_CLEANUP","provenance":{"file_id":"file_0000000013008210b5354c307b197ee9"}},{"artifact_id":"UAO_ACTIVE(2).md","classification":"ACTIVE","subtype":"NONCANONICAL_ACTIVE_LOOKING_ARTIFACT","status":"NONCANONICAL","disposition":"INSPECT_BEFORE_ANY_CLEANUP","provenance":{"file_id":"file_00000000ee448243a1a4fe29508985b0"}},{"artifact_id":"UAR_ACTIVE(1).md","classification":"ACTIVE","subtype":"NONCANONICAL_ACTIVE_LOOKING_ARTIFACT","status":"NONCANONICAL","disposition":"INSPECT_BEFORE_ANY_CLEANUP","provenance":{"file_id":"file_00000000401c81f49ff395171c3c8801"}},{"artifact_id":"UAL_ACTIVE(1).md","classification":"ACTIVE","subtype":"NONCANONICAL_ACTIVE_LOOKING_ARTIFACT","status":"NONCANONICAL","disposition":"INSPECT_BEFORE_ANY_CLEANUP","provenance":{"file_id":"file_0000000065d08210b8fc5c2be4ef71df"}},{"artifact_id":"UAO_ARCHIVE_1.2.md","classification":"ARCHIVE","status":"HISTORICAL","disposition":"DURABLE_UNTIL_HYGIENE_REVIEW","provenance":{"file_id":"file_0000000036e881f4acb48dda7f4e936c"}},{"artifact_id":"UAO_ARCHIVE_1.3.md","classification":"ARCHIVE","status":"VERIFIED","state_identity":"sha256:10691c283d7567fd574aa7a9c81f8c4020b3f18aaf787918f6682918e6ba832a","disposition":"DURABLE_ROLLBACK_LINEAGE","provenance":{"file_id":"file_00000000fcb882468904847d4120bdb3"}},{"artifact_id":"UAO_ROLLBACK_1.2.md","classification":"ROLLBACK","status":"HISTORICAL","disposition":"REVIEW_REDUNDANCY","provenance":{"file_id":"file_0000000067d082468b8cf9afd2500cda"}},{"artifact_id":"UAO_ROLLBACK_1.3.md","classification":"ROLLBACK","status":"VERIFIED","state_identity":"sha256:10691c283d7567fd574aa7a9c81f8c4020b3f18aaf787918f6682918e6ba832a","disposition":"DURABLE_CURRENT_ROLLBACK","provenance":{"file_id":"file_0000000019e481f49d58f313e2a34d0d"}},{"artifact_id":"UAO_ACTIVE_1.4_CANDIDATE.md","classification":"CANDIDATE","status":"HISTORICAL","disposition":"PROMOTED_CANDIDATE_REVIEW_RETENTION","provenance":{"file_id":"file_00000000620881f4b112497a7872bb25"}},{"artifact_id":"CONTROL_PLANE_SNAPSHOT.json","classification":"SNAPSHOT","status":"STALE","state_identity":"sha256:116f9238552fd018653ce191c3ea49ef780c6159c5e53dd7a7c09ad84f258072","disposition":"REPLACE_WITH_PHASE9B_SNAPSHOT","provenance":{"file_id":"file_00000000ece481f495793651cbcfdb1f"}},{"artifact_id":"HANDOVER_PROJECT_ATLAS_M3_TIME_NAVIGATOR_2026-08-30.md","classification":"HANDOFF","status":"STALE","state_identity":"sha256:0166454259ae5cc4cbbf7228b8d3d79e5cfdd8f6fbf087f1e6584daee3a9954d","disposition":"KEEP_AS_PROVENANCE_NOT_CURRENT_AUTHORITY","provenance":{"file_id":"file_000000008f6c81f4a1697ecaba8c7791"}},{"artifact_id":"telemaque-178-human-review.json","classification":"HISTORICAL","subtype":"HUMAN_REVIEW_EVIDENCE","status":"VERIFIED_FROM_PARSED_LIBRARY_CONTENT","disposition":"KEEP_AS_EVIDENCE","provenance":{"file_id":"file_00000000678c8246bbb41e1eb5c41948"}}],"gates":[],"warnings":[{"warning_id":"W-KERNEL-NONCANONICAL-ACTIVE","severity":"WARNING","status":"VERIFIED","message":"Noncanonical kernel copies with ACTIVE-looking semantics exist; exact canonical filenames remain unambiguous."},{"warning_id":"W-OLD-CONTROL-SNAPSHOT-STALE","severity":"WARNING","status":"VERIFIED","message":"The previous CONTROL_PLANE_SNAPSHOT describes pre-promotion UAO 1.3/Phase 9 gate state and is stale."},{"warning_id":"W-WORK-COVERAGE-PARTIAL","severity":"WARNING","status":"VERIFIED","message":"Only works with persistent explicit identities are registered; known conversation-only work is intentionally omitted."},{"warning_id":"W-ATLAS-WORKS-STALE","severity":"WARNING","status":"VERIFIED","message":"Atlas work-package observations from the 2026-08-30 handover are stale relative to later post-M3.4 evidence; no execution should use them before refresh."},{"warning_id":"W-LEARNING-REGISTRY-ABSENT","severity":"INFO","status":"VERIFIED","message":"No canonical UAL artifact-learning registry was found in the bounded Library inspection; no learnings were inferred from conversations or prompts."},{"warning_id":"W-PARTITION-COVERAGE-UNKNOWN","severity":"INFO","status":"VERIFIED","message":"No persistent UAO PARTITION_ID records were established; lanes/work packages were not relabeled as partitions."}],"attention_items":[{"attention_id":"ATT-STALE-ATLAS","priority":1,"kind":"STALE_STATE","label":"RafraÃ®chir les work packages Atlas persistants avant toute action opÃ©rationnelle.","reason":"DerniÃ¨re observation persistante enregistrÃ©e: 2026-08-30; artefacts post-M3.4 plus rÃ©cents existent.","action_id":"ACT-REFRESH-ATLAS-WORKS"},{"attention_id":"ATT-KERNEL-HYGIENE","priority":2,"kind":"HYGIENE","label":"Inspecter les copies de kernels non canoniques portant une apparence ACTIVE.","reason":"Elles ne sont pas canoniques mais peuvent troubler lâ€™inspection humaine.","action_id":"ACT-INSPECT-KERNEL-COPIES"},{"attention_id":"ATT-LEARNING-COVERAGE","priority":3,"kind":"COVERAGE","label":"Learning Registry UAL absent.","reason":"Aucun learning persistant UAL nâ€™est inventoriable de faÃ§on dÃ©fendable aujourdâ€™hui.","action_id":null}],"suggested_actions":[{"action_id":"ACT-REFRESH-ATLAS-WORKS","source_snapshot_id":"HCP-SNAP-20260905T120215Z","action_type":"REVIEW","target_type":"WORK_SET","target_id":"LEARNIT_ATLAS_STALE_WORKS","target_state_identity":"sha256:64ca0159e444bb49c030659fe660e1101286af49ac9f08bae190207d874b1a8a","label":"RafraÃ®chir les Ã©tats Atlas persistants","reason":"Les quatre work packages enregistrÃ©s proviennent dâ€™un handover 2026-08-30 devenu stale.","scope":"PROJECT:LEARNIT/ATLAS","requested_mode":"INSPECT","authority_expected":"A0","material_change_hint":"C0","required_gate_hint":"G0","dependencies":[],"expected_result":"Remplacer uniquement les observations stale par des Ã©tats actuels prouvÃ©s, ou les laisser UNKNOWN.","reversibility":"READ_ONLY_UNTIL_EXPLICIT_UPDATE","reentry_if":"Une mutation GitHub ou Library est proposÃ©e."},{"action_id":"ACT-INSPECT-KERNEL-COPIES","source_snapshot_id":"HCP-SNAP-20260905T120215Z","action_type":"INSPECT","target_type":"ARTIFACT_SET","target_id":"NONCANONICAL_ACTIVE_LOOKING_KERNEL_COPIES","target_state_identity":"sha256:2d410bb30375f9eee18599c7616a0ed43c27bd5ff25b8c65b74e28ec925a0da4","label":"Inspecter les copies de kernels non canoniques","reason":"Plusieurs copies portent une sÃ©mantique ACTIVE sans Ãªtre les fichiers canoniques exacts.","scope":"SYSTEM/KERNEL_HYGIENE","requested_mode":"INSPECT","authority_expected":"A0","material_change_hint":"C0","required_gate_hint":"G0","dependencies":[],"expected_result":"Classer KEEP/ARCHIVE/DELETE_CANDIDATE sans supprimer automatiquement.","reversibility":"READ_ONLY","reentry_if":"Une suppression ou un renommage est proposÃ©."}],"coverage":{"kernels":{"status":"VERIFIED","registered":7,"note":"All canonical active kernels directly read and hashed."},"works":{"status":"PARTIAL","registered":4,"note":"Persistent explicit identities only; stale observations are not treated as current."},"partitions":{"status":"UNKNOWN","registered":0,"note":"No persistent UAO PARTITION_ID records established."},"learnings":{"status":"ABSENT","registered":0,"note":"No canonical UAL artifact-learning registry found; prompt/educational 'learning' files are not UAL learnings."},"artifacts":{"status":"PARTIAL","registered":13,"note":"Only control-relevant artifacts inventoried; Library is not exhaustively catalogued."},"conversation_history_used_as_canonical":false}}
