@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "human-control-plane.action-unit.v1",
+  "type": "object",
+  "required": ["action_id","source_snapshot_id","action_type","target_type","target_id","target_state_identity","label","reason","scope","requested_mode","authority_expected","material_change_hint","required_gate_hint","dependencies","expected_result","reversibility","reentry_if"],
+  "properties": {
+    "action_id":{"type":"string","minLength":1},
+    "source_snapshot_id":{"type":"string","minLength":1},
+    "action_type":{"enum":["INSPECT","REVIEW","RESUME","PREPARE_CHANGE","ARCHIVE","CLOSE_WORK","DEPRECATE","INVALIDATE","FORGET","PROPOSE_ROLLBACK","PROPOSE_PROMOTION","NAVIGATE","OPEN_CHILD","REFRESH_SNAPSHOT"]},
+    "target_type":{"type":"string"},
+    "target_id":{"type":"string"},
+    "target_state_identity":{"type":["string","null"]},
+    "label":{"type":"string"},
+    "reason":{"type":"string"},
+    "scope":{"type":"string"},
+    "requested_mode":{"enum":["INSPECT","PREPARE","APPLY"]},
+    "authority_expected":{"type":"string"},
+    "material_change_hint":{"enum":["C0","C1","C2","C3","UNKNOWN"]},
+    "required_gate_hint":{"enum":["G0","G1","G2","G3","UNKNOWN"]},
+    "dependencies":{"type":"array"},
+    "expected_result":{"type":"string"},
+    "reversibility":{"type":"string"},
+    "reentry_if":{"type":"string"}
+  }
+}
