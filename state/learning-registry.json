@@ -1,17 +1,1 @@
-{
-  "schema": "governed-learning-registry.v1",
-  "registry_identity": "sha256-canonical-payload:07b65892582ad1cc782cf0d2793c39e919bbc48bd4a6867a2584af65d6a30f4f",
-  "updated_at": "2026-09-05T13:40:00Z",
-  "semantic_authority": {
-    "kernel": "UAL",
-    "version": "1.0",
-    "state_identity": "sha256:06b59a480f69f16719498b29c56185392549729a7fae59f7fed33d5b42ec4db2"
-  },
-  "state_role": "STATE_NOT_AUTHORITY",
-  "source_of_truth": {"type":"CHATGPT_LIBRARY_ARTIFACT","canonical_file":"LEARNING_REGISTRY.json"},
-  "update_contract": {"strategy":"LOCAL_DELTA","pipeline":["CURRENT_REGISTRY","INSPECT_PERSISTENT_SOURCES","REVALIDATE_IDENTITIES","APPLY_MATERIAL_DELTAS_ONLY","REEVALUATE_FRESHNESS","VERIFY","FREEZE_REGISTRY","UPDATE_CONTROL_PLANE_STATE","FREEZE_SNAPSHOT","OPTIONAL_PUBLISH"],"invariant":"LOCAL_DELTA > GLOBAL_RECONSTRUCTION"},
-  "coverage": {"status":"EMPTY_ESTABLISHED_REGISTRY","registered":0,"audit_scope":"CHATGPT_LIBRARY_PERSISTENT_ARTIFACTS","conversation_history_used_as_canonical":false,"note":"No instantiated persistent UAL learning unit was defensibly found. Empty registry != proven no learning."},
-  "lifecycle_policy": {"supported":["CAPTURE_CANDIDATE","REVIEW","VALIDATE","DEPRECATE","INVALIDATE","FORGET","REFRESH","INSPECT"],"capture_candidate":"PROPOSABLE","validate":"NEVER_IMPLICIT","deprecate":"GOVERNED_MUTATION","invalidate":"AUTO_ONLY_IF_DETERMINISTIC_CONDITION_AND_EXPLICIT_DELEGATED_AUTHORITY_ELSE_PROPOSE","forget":"EXPLICIT_GOVERNED_MUTATION","physical_delete_is_forget":false,"kernel_mutation_from_learning":"PROPOSE_ONLY"},
-  "applicability_model": {"outcomes":["APPLICABLE","NOT_APPLICABLE","STALE","INVALID","UNKNOWN"],"inputs":["scope","applies_when","does_not_apply_when","freshness_class","valid_until","review_after","invalidate_if"],"semantic_similarity_inference":false,"unknown_defaults_to_applicable":false},
-  "learnings": []
-}
+{"applicability_model":{"inputs":["scope","applies_when","does_not_apply_when","freshness_class","valid_until","review_after","invalidate_if"],"outcomes":["APPLICABLE","NOT_APPLICABLE","STALE","INVALID","UNKNOWN"],"semantic_similarity_inference":false,"unknown_defaults_to_applicable":false},"coverage":{"audit_scope":"CHATGPT_LIBRARY_PERSISTENT_ARTIFACTS","conversation_history_used_as_canonical":false,"note":"No instantiated persistent UAL learning unit was defensibly found. Empty registry != proven no learning.","registered":0,"status":"EMPTY_ESTABLISHED_REGISTRY"},"learnings":[],"lifecycle_policy":{"capture_candidate":"PROPOSABLE","deprecate":"GOVERNED_MUTATION","forget":"EXPLICIT_GOVERNED_MUTATION","invalidate":"AUTO_ONLY_IF_DETERMINISTIC_CONDITION_AND_EXPLICIT_DELEGATED_AUTHORITY_ELSE_PROPOSE","kernel_mutation_from_learning":"PROPOSE_ONLY","physical_delete_is_forget":false,"supported":["CAPTURE_CANDIDATE","REVIEW","VALIDATE","DEPRECATE","INVALIDATE","FORGET","REFRESH","INSPECT"],"validate":"NEVER_IMPLICIT"},"registry_identity":"sha256-canonical-payload:07b65892582ad1cc782cf0d2793c39e919bbc48bd4a6867a2584af65d6a30f4f","schema":"governed-learning-registry.v1","semantic_authority":{"kernel":"UAL","state_identity":"sha256:06b59a480f69f16719498b29c56185392549729a7fae59f7fed33d5b42ec4db2","version":"1.0"},"source_of_truth":{"canonical_file":"LEARNING_REGISTRY.json","type":"CHATGPT_LIBRARY_ARTIFACT"},"state_role":"STATE_NOT_AUTHORITY","update_contract":{"invariant":"LOCAL_DELTA > GLOBAL_RECONSTRUCTION","pipeline":["CURRENT_REGISTRY","INSPECT_PERSISTENT_SOURCES","REVALIDATE_IDENTITIES","APPLY_MATERIAL_DELTAS_ONLY","REEVALUATE_FRESHNESS","VERIFY","FREEZE_REGISTRY","UPDATE_CONTROL_PLANE_STATE","FREEZE_SNAPSHOT","OPTIONAL_PUBLISH"],"strategy":"LOCAL_DELTA"},"updated_at":"2026-09-05T13:40:00Z"}
