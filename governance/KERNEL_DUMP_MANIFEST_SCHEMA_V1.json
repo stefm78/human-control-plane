@@ -1,0 +1,64 @@
+{
+  "schema": "kernel-dump-manifest.v1",
+  "status": "CANDIDATE_METHOD",
+  "required": [
+    "dump_id",
+    "created_at",
+    "scope",
+    "target",
+    "authority_context",
+    "files",
+    "missing_required_artifacts",
+    "completeness"
+  ],
+  "scope_values": ["KERNEL", "SYSTEM"],
+  "restore_disposition_values": ["RESTORABLE", "CONTEXT_ONLY", "EVIDENCE_ONLY"],
+  "completeness_values": ["COMPLETE", "INCOMPLETE"],
+  "template": {
+    "dump_id": null,
+    "created_at": null,
+    "scope": null,
+    "target": {
+      "canonical_file": null,
+      "spec_id": null,
+      "version": null,
+      "status": null,
+      "state_identity": null
+    },
+    "authority_context": {
+      "ucp": {
+        "spec_id": "UCP-CONTROL-PLANE",
+        "version": null,
+        "state_identity": null
+      },
+      "uao": {
+        "spec_id": "UAO-KERNEL",
+        "version": null,
+        "state_identity": null
+      },
+      "control_plane_state_identity": null
+    },
+    "files": [
+      {
+        "archive_path": null,
+        "canonical_name": null,
+        "logical_role": null,
+        "source_reference": null,
+        "source_state_identity": null,
+        "sha256": null,
+        "restore_disposition": null,
+        "required_for_restore": false,
+        "required_for_audit": false,
+        "dependencies": []
+      }
+    ],
+    "qualification": {
+      "run_id": null,
+      "run_state": null,
+      "included": false
+    },
+    "missing_required_artifacts": [],
+    "material_exclusions": [],
+    "completeness": "INCOMPLETE"
+  }
+}
