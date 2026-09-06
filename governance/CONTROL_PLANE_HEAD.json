@@ -10,15 +10,30 @@
     "sha256": "c499abc9d1045b3cbe0b632d7470ccbbe52d4dc726968e5206cfdde393f2cfb4",
     "object": "governance/UCP_ACTIVE.md"
   },
+  "kernel_registry": {
+    "schema": "kernel.successor-registry.v1",
+    "status": "ACTIVE",
+    "change_id": "KERNEL-SUCCESSOR-GIT-NATIVE-1.0",
+    "sha256": "ae03a2bf5de2c8fe1ab7b9eedc846004064a7fbd51b3ec1ef9381faf81045528",
+    "locator": {
+      "provider": "Git",
+      "repository": "stefm78/human-control-plane",
+      "branch": "main",
+      "object": "governance/deployables/successor/KERNEL_REGISTRY_1.0_ACTIVE.json",
+      "git_blob_sha": "390a0b695f14e20dd842180076af33f793baec9e"
+    }
+  },
   "uao": {
     "spec_id": "UAO-KERNEL",
     "status": "ACTIVE",
-    "version": "1.7",
-    "sha256": "39a8431c6270ea0e316cefaefdf220160508a6d04eb7f11978a09530224b6468",
+    "version": "2.0",
+    "sha256": "05b47b8b1e47704b6d4decfde6dbcad86aa91e62a680c6a24c195eb55c546900",
     "locator": {
-      "provider": "CHATGPT_FILE_LIBRARY",
-      "file": "UAO_ACTIVE.md",
-      "file_id": "file_00000000557482468c15f295d6be5a8a"
+      "provider": "Git",
+      "repository": "stefm78/human-control-plane",
+      "branch": "main",
+      "object": "governance/deployables/successor/UAO_ACTIVE_2.0.md",
+      "git_blob_sha": "ed1514646348ea9a3f6409a2b4f3601c11fe65e4"
     }
   },
   "governance_rules": [
@@ -51,22 +66,24 @@
       "promotion_decision": "HUMAN_G2_GO_EXACT"
     }
   ],
-  "superseded_not_promoted": [
-    {
-      "spec_id": "UAO-KERNEL",
-      "version": "1.9",
-      "change_id": "UAO-1.9-GOVERNED-CONTINUATION",
-      "reason": "governed continuation extracted to independent ACTIVE policy; UAO 1.7 identity preserved"
-    },
-    {
-      "spec_id": "UAO-COMPOSED-ACTIVE-RESOLUTION",
-      "version": "1.0",
-      "reason": "not required for governed continuation"
-    }
-  ],
+  "promotion_record": {
+    "change_id": "KERNEL-SUCCESSOR-GIT-NATIVE-1.0",
+    "material_change_class": "C2",
+    "required_gate": "G2",
+    "authority_delta": "NONE",
+    "human_decision": "GO",
+    "previous_head_git_blob_sha": "067f69f56342f0202ac631ea57f48a700b54088c"
+  },
+  "rollback": {
+    "target_head_git_blob_sha": "067f69f56342f0202ac631ea57f48a700b54088c",
+    "target_uao_spec_id": "UAO-KERNEL",
+    "target_uao_version": "1.7",
+    "target_uao_sha256": "39a8431c6270ea0e316cefaefdf220160508a6d04eb7f11978a09530224b6468"
+  },
   "authority_semantics": {
     "git_authority_before_human_cutover": false,
     "commit_exists_is_active": false,
-    "human_g3_cutover_required": true
+    "human_g2_cutover_required": true,
+    "human_g2_cutover_satisfied": true
   }
 }
