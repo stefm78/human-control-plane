@@ -1,0 +1,30 @@
+{
+  "schema": "kernel.verified-dump-bundle.v1",
+  "status": "CANDIDATE",
+  "scope": "SUCCESSOR_KERNEL_NON_CONSTITUTIONAL",
+  "source": {
+    "candidate_head_object": "governance/candidates/successor/CONTROL_PLANE_HEAD_SUCCESSOR_1.0_CANDIDATE.json",
+    "candidate_head_sha256": "194e244ac7360387dab80237be817ef857b6a0650c31498a4070a4d9fb12566e",
+    "registry_object": "governance/candidates/successor/KERNEL_REGISTRY_1.0_CANDIDATE.json",
+    "registry_sha256": "fbc0fbbf6173228b275f66cb7f215ce8b2622f0f95f2012ab0c2c176ea4e9888"
+  },
+  "payloads": [
+    {"spec_id":"UAO-KERNEL","version":"2.0","sha256":"05b47b8b1e47704b6d4decfde6dbcad86aa91e62a680c6a24c195eb55c546900","object":"governance/deployables/successor/UAO_ACTIVE_2.0.md"},
+    {"spec_id":"UAR-KERNEL","version":"1.1","sha256":"b338159ecf9d7b6bf4537282c68cdaab80b8d5baa4b4ae4a45b2421ce3a8bafd","object":"governance/deployables/successor/UAR_ACTIVE_1.1.md"},
+    {"spec_id":"UAS-KERNEL","version":"2.4","sha256":"d2d738eac91e7234ec3e7b027d6bd1976f0b93cbb9f1ac42471ab2a0a8792cf2","object":"governance/deployables/successor/UAS_ACTIVE_2.4.md"},
+    {"spec_id":"UAB-KERNEL","version":"1.2","sha256":"7a2b1e98e4951030b27ad541a66e1f63aadd08e5d2ba460b945d655c1c9662d4","object":"governance/deployables/successor/UAB_ACTIVE_1.2.md"},
+    {"spec_id":"UAA-KERNEL","version":"1.2","sha256":"93fcd8eb583ae4c165e6668ad91c9afef7e252467613b65faa8143a324236557","object":"governance/deployables/successor/UAA_ACTIVE_1.2.md"},
+    {"spec_id":"UAL-KERNEL","version":"1.2","sha256":"e68d3a4a15db99743b8af44f127ebd8dffe9f997e90324baeccaa676f32aac2d","object":"governance/deployables/successor/UAL_ACTIVE_1.2.md"},
+    {"spec_id":"KERNEL-COMPATIBILITY-CONTRACT","version":"1.0","sha256":"0d2c2c566aa5059adf7854d5a062476945dd4e09032955fd1f421cc53b8acbc4","object":"governance/deployables/successor/KERNEL_COMPATIBILITY_CONTRACT_1.0_ACTIVE.md"},
+    {"spec_id":"KERNEL-GIT-DURABILITY-RULE","version":"1.0","sha256":"fd02e6ed0018c9fe496c61f89a2d5fa6e9bfb1890fcf48967ffcbb2853f57521","object":"governance/active/KERNEL_GIT_DURABILITY_RULE_1.0_ACTIVE.md"},
+    {"spec_id":"GOVERNED-CONTINUATION-POLICY","version":"1.0","sha256":"327a639311ebd652ec026a24e49da60993e48bda464188b4c5fe6c47ac046380","object":"governance/active/GOVERNED_CONTINUATION_POLICY_1.0_ACTIVE.md"}
+  ],
+  "constitutional_context": {
+    "ucp_spec_id":"UCP-CONTROL-PLANE",
+    "ucp_version":"1.1-R4",
+    "ucp_sha256":"c499abc9d1045b3cbe0b632d7470ccbbe52d4dc726968e5206cfdde393f2cfb4",
+    "authority":"CONTEXT_ONLY_CURRENT_AUTHORITY_WINS"
+  },
+  "closure_integrity": "PASS_PREPROMOTION_GIT_READBACK",
+  "mutation_performed": false
+}
