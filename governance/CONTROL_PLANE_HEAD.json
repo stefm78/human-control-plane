@@ -21,6 +21,22 @@
       "file_id": "file_00000000557482468c15f295d6be5a8a"
     }
   },
+  "governance_rules": [
+    {
+      "spec_id": "KERNEL-GIT-DURABILITY-RULE",
+      "status": "ACTIVE",
+      "version": "1.0",
+      "sha256": "fd02e6ed0018c9fe496c61f89a2d5fa6e9bfb1890fcf48967ffcbb2853f57521",
+      "locator": {
+        "provider": "Git",
+        "repository": "stefm78/human-control-plane",
+        "branch": "main",
+        "object": "governance/active/KERNEL_GIT_DURABILITY_RULE_1.0_ACTIVE.md",
+        "git_blob_sha": "8980c239789348456cd66eace66937f86734ebb2"
+      },
+      "promotion_decision": "HUMAN_G2_GO_EXACT"
+    }
+  ],
   "authority_semantics": {
     "git_authority_before_human_cutover": false,
     "commit_exists_is_active": false,
