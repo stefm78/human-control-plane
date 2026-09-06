@@ -1,0 +1,14 @@
+{
+  "schema": "kernel.selected-registry.v1",
+  "status": "CANDIDATE",
+  "authority": "NONE_UNTIL_G2_SELECTION",
+  "source": "legacy verified kernel identities; locators remain non-Git until exact payload migration",
+  "kernels": [
+    {"spec_id":"UAO-KERNEL","version":"1.7","sha256":"39a8431c6270ea0e316cefaefdf220160508a6d04eb7f11978a09530224b6468","entrypoint":"INTERNAL_BOOTSTRAP","role":"ORCHESTRATE","current_locator":{"provider":"CHATGPT_FILE_LIBRARY","file_id":"file_00000000557482468c15f295d6be5a8a"},"git_migration_status":"BLOCKED_EXACT_BYTES_NOT_GIT_RETRIEVABLE"},
+    {"spec_id":"UAR-KERNEL","version":"1.0","sha256":"f0ad46c5a851ae99f61ab759e315a7cdb282de44d233fa1fd648e1da78382c94","entrypoint":"/research","role":"KNOW","current_locator":{"provider":"CHATGPT_FILE_LIBRARY","file_id":"file_00000000f37c821093486fe6271107c9"},"git_migration_status":"PENDING_EXACT_PAYLOAD"},
+    {"spec_id":"UAS-KERNEL","version":"2.3","sha256":"1680b15b8b9b6191838da8e6c9abafabcb46339d9cb05465e28fefa5917bf5b4","entrypoint":"/solve","role":"DECIDE","current_locator":{"provider":"CHATGPT_FILE_LIBRARY","file_id":"file_00000000ff988243a68acc2bcd34857c"},"git_migration_status":"PENDING_EXACT_PAYLOAD"},
+    {"spec_id":"UAB-KERNEL","version":"1.1","sha256":"1bcb52f3939c4cabd26446477de70228a45f7e40ee023aea6c4f5eef49382c40","entrypoint":"/build","role":"DO","current_locator":{"provider":"CHATGPT_FILE_LIBRARY","file_id":"file_0000000040f481f4bfe5e48513cef332"},"git_migration_status":"PENDING_EXACT_PAYLOAD"},
+    {"spec_id":"UAA-KERNEL","version":"1.1","sha256":"b4bb5d344ef0b51eef13fb74c1cf5a1ae7b19340be78862e7c31430e49a2fab1","entrypoint":"/audit","role":"PROVE_OR_REFUTE","current_locator":{"provider":"CHATGPT_FILE_LIBRARY","file_id":"file_00000000f0ac82439f06c1e9da8e5ac9"},"git_migration_status":"PENDING_EXACT_PAYLOAD"},
+    {"spec_id":"UAL-KERNEL","version":"1.1","sha256":"a0e14879b92c847f21e08fcb46ab1882be71c992e15414bdc02b0d215fc68966","entrypoint":"/learn","role":"RETAIN_REUSABLE_LEARNING","current_locator":{"provider":"CHATGPT_FILE_LIBRARY","file_id":"file_00000000506881f48771a5cb2ac30d50"},"git_migration_status":"PENDING_EXACT_PAYLOAD"}
+  ]
+}

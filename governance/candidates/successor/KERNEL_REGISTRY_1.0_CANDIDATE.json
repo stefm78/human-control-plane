@@ -1,0 +1,67 @@
+{
+  "schema": "kernel.successor-registry.v1",
+  "status": "CANDIDATE",
+  "change_id": "KERNEL-SUCCESSOR-GIT-NATIVE-1.0",
+  "material_change_class": "C2",
+  "required_gate": "G2",
+  "authority_delta": "NONE",
+  "compatibility_contract": {
+    "spec_id": "KERNEL-COMPATIBILITY-CONTRACT",
+    "version": "1.0",
+    "sha256": "0d2c2c566aa5059adf7854d5a062476945dd4e09032955fd1f421cc53b8acbc4",
+    "object": "governance/deployables/successor/KERNEL_COMPATIBILITY_CONTRACT_1.0_ACTIVE.md"
+  },
+  "kernels": [
+    {
+      "spec_id": "UAO-KERNEL",
+      "version": "2.0",
+      "sha256": "05b47b8b1e47704b6d4decfde6dbcad86aa91e62a680c6a24c195eb55c546900",
+      "object": "governance/deployables/successor/UAO_ACTIVE_2.0.md"
+    },
+    {
+      "spec_id": "UAR-KERNEL",
+      "version": "1.1",
+      "sha256": "b338159ecf9d7b6bf4537282c68cdaab80b8d5baa4b4ae4a45b2421ce3a8bafd",
+      "object": "governance/deployables/successor/UAR_ACTIVE_1.1.md"
+    },
+    {
+      "spec_id": "UAS-KERNEL",
+      "version": "2.4",
+      "sha256": "d2d738eac91e7234ec3e7b027d6bd1976f0b93cbb9f1ac42471ab2a0a8792cf2",
+      "object": "governance/deployables/successor/UAS_ACTIVE_2.4.md"
+    },
+    {
+      "spec_id": "UAB-KERNEL",
+      "version": "1.2",
+      "sha256": "7a2b1e98e4951030b27ad541a66e1f63aadd08e5d2ba460b945d655c1c9662d4",
+      "object": "governance/deployables/successor/UAB_ACTIVE_1.2.md"
+    },
+    {
+      "spec_id": "UAA-KERNEL",
+      "version": "1.2",
+      "sha256": "93fcd8eb583ae4c165e6668ad91c9afef7e252467613b65faa8143a324236557",
+      "object": "governance/deployables/successor/UAA_ACTIVE_1.2.md"
+    },
+    {
+      "spec_id": "UAL-KERNEL",
+      "version": "1.2",
+      "sha256": "e68d3a4a15db99743b8af44f127ebd8dffe9f997e90324baeccaa676f32aac2d",
+      "object": "governance/deployables/successor/UAL_ACTIVE_1.2.md"
+    }
+  ],
+  "governance_rules": [
+    {
+      "spec_id": "KERNEL-GIT-DURABILITY-RULE",
+      "version": "1.0",
+      "sha256": "fd02e6ed0018c9fe496c61f89a2d5fa6e9bfb1890fcf48967ffcbb2853f57521",
+      "object": "governance/active/KERNEL_GIT_DURABILITY_RULE_1.0_ACTIVE.md"
+    },
+    {
+      "spec_id": "GOVERNED-CONTINUATION-POLICY",
+      "version": "1.0",
+      "sha256": "327a639311ebd652ec026a24e49da60993e48bda464188b4c5fe6c47ac046380",
+      "object": "governance/active/GOVERNED_CONTINUATION_POLICY_1.0_ACTIVE.md"
+    }
+  ],
+  "invariant": "EMPTY_SESSION + BOOTSTRAP => EXACT_ACTIVE_KERNEL"
+}
