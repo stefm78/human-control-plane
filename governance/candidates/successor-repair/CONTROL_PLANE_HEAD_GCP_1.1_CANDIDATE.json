@@ -1,0 +1,85 @@
+{
+  "schema": "kernel.control-plane-head.v1",
+  "status": "ACTIVE",
+  "deployment_state": "PRE_PROMOTION_CANDIDATE",
+  "repository": "stefm78/human-control-plane",
+  "branch": "main",
+  "constitutional_ucp": {
+    "spec_id": "UCP-CONTROL-PLANE",
+    "version": "1.1-R4",
+    "sha256": "c499abc9d1045b3cbe0b632d7470ccbbe52d4dc726968e5206cfdde393f2cfb4",
+    "object": "governance/UCP_ACTIVE.md"
+  },
+  "kernel_registry": {
+    "schema": "kernel.successor-registry.v1",
+    "status": "ACTIVE",
+    "change_id": "KERNEL-SUCCESSOR-GIT-NATIVE-1.0-GCP-1.1",
+    "sha256": "8359b4de99875778c882dabd00c19da62c50f51ac9cb4ac97cc949dd9a8d2e65",
+    "locator": {
+      "provider": "Git",
+      "repository": "stefm78/human-control-plane",
+      "branch": "main",
+      "object": "governance/deployables/successor/KERNEL_REGISTRY_1.1_ACTIVE.json",
+      "git_blob_sha": "8b77ab30e98e741e2d58cfa45c801c0f72a2642d"
+    }
+  },
+  "uao": {
+    "spec_id": "UAO-KERNEL",
+    "status": "ACTIVE",
+    "version": "2.0",
+    "sha256": "05b47b8b1e47704b6d4decfde6dbcad86aa91e62a680c6a24c195eb55c546900",
+    "locator": {
+      "provider": "Git",
+      "repository": "stefm78/human-control-plane",
+      "branch": "main",
+      "object": "governance/deployables/successor/UAO_ACTIVE_2.0.md",
+      "git_blob_sha": "ed1514646348ea9a3f6409a2b4f3601c11fe65e4"
+    }
+  },
+  "governance_rules": [
+    {
+      "spec_id": "KERNEL-GIT-DURABILITY-RULE",
+      "status": "ACTIVE",
+      "version": "1.0",
+      "sha256": "fd02e6ed0018c9fe496c61f89a2d5fa6e9bfb1890fcf48967ffcbb2853f57521",
+      "locator": {
+        "provider": "Git",
+        "repository": "stefm78/human-control-plane",
+        "branch": "main",
+        "object": "governance/active/KERNEL_GIT_DURABILITY_RULE_1.0_ACTIVE.md",
+        "git_blob_sha": "8980c239789348456cd66eace66937f86734ebb2"
+      }
+    },
+    {
+      "spec_id": "GOVERNED-CONTINUATION-POLICY",
+      "status": "ACTIVE",
+      "version": "1.1",
+      "sha256": "038f82a17f15a4ce3d2303ac8b1301239ec7e87f7f7a669a89dafedb738ad8a7",
+      "locator": {
+        "provider": "Git",
+        "repository": "stefm78/human-control-plane",
+        "branch": "main",
+        "object": "governance/deployables/successor/GOVERNED_CONTINUATION_POLICY_1.1_ACTIVE.md",
+        "git_blob_sha": "bde0b6a8e3bb5f2489376e01f1354ecd0d8edf25"
+      }
+    }
+  ],
+  "promotion_record": {
+    "change_id": "KERNEL-SUCCESSOR-GIT-NATIVE-1.0-GCP-1.1",
+    "material_change_class": "C2",
+    "required_gate": "G2",
+    "authority_delta": "NONE",
+    "human_decision": "PENDING_NEW_G2"
+  },
+  "rollback": {
+    "target_head_git_blob_sha": "067f69f56342f0202ac631ea57f48a700b54088c",
+    "target_uao_spec_id": "UAO-KERNEL",
+    "target_uao_version": "1.7",
+    "target_uao_sha256": "39a8431c6270ea0e316cefaefdf220160508a6d04eb7f11978a09530224b6468"
+  },
+  "authority_semantics": {
+    "commit_exists_is_active": false,
+    "human_g2_cutover_required": true,
+    "human_g2_cutover_satisfied": false
+  }
+}
