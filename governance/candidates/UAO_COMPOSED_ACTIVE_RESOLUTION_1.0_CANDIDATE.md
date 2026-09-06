@@ -46,7 +46,8 @@ amendments[]:
   applies_to_base_sha256
 composition_order[]
 composition_semantics: BASE_THEN_AMENDMENTS
-manifest_sha256
+
+The exact SHA-256 of the complete manifest bytes is stored by CONTROL_PLANE_HEAD beside the manifest locator. It is deliberately NOT embedded in the manifest itself, avoiding self-referential identity semantics.
 
 The manifest is the durable composition description. It is not constitutional authority.
 
