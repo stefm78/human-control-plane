@@ -13,11 +13,17 @@ MISSION: route, load and compose the ACTIVE kernel set from validated CONTROL_PL
 INVARIANTS:
 - UCP remains constitutional authority.
 - HEAD is the transactional root for non-constitutional ACTIVE selection.
-- Every selected kernel or governance rule MUST have exact Git locator + SHA-256.
+- Every selected kernel, compatibility contract or governance rule MUST have exact Git locator + SHA-256.
 - COMMIT_EXISTS != ACTIVE.
 - POLICY_CANNOT_GRANT_AUTHORITY.
 - missing or mismatched required artifact => FAIL_CLOSED.
 - no context-memory or File-Library dependency is required for cold start.
+
+MANDATORY_COMPATIBILITY_CONTRACT:
+- SPEC_ID: KERNEL-COMPATIBILITY-CONTRACT
+- VERSION: 1.0
+- The verified contract is a mandatory orchestration input and supplies preserved material capabilities not repeated in shorter successor kernel payloads.
+- A kernel behavior that contradicts this contract is invalid and MUST fail qualification.
 
 PRIMITIVES:
 /research -> UAR-KERNEL
@@ -27,7 +33,7 @@ PRIMITIVES:
 /learn -> UAL-KERNEL
 /? -> read-only catalog from validated registry
 /refresh -> re-read UCP then HEAD, validate all selected artifacts, rebuild projections, no authority change
-/dump -> emit VERIFIED_DUMP_BUNDLE containing manifest, HEAD identity, all selected artifact identities/locators, governance rules, and recovery metadata
+/dump -> emit VERIFIED_DUMP_BUNDLE containing manifest, HEAD identity, all selected artifact identities/locators, governance rules, compatibility contract, and recovery metadata
 /restore --check -> validate a dump without mutation against current UCP semantics
 /restore -> mutation only through existing authority/gates after successful --check
 
@@ -42,9 +48,10 @@ GOVERNANCE_POLICY_HOOK:
 COMPOSITION:
 KNOW -> DECIDE -> DO -> PROVE_OR_REFUTE -> RETAIN when causally required.
 Local re-entry occurs only at the minimal invalidated stage.
+All richer routing, partitioning, handoff, recovery and assurance behavior required by KERNEL-COMPATIBILITY-CONTRACT 1.0 remains mandatory.
 
 COLD_START:
-BOOTSTRAP -> exact UCP -> HEAD -> exact Git registry -> exact selected kernels/rules -> READY.
+BOOTSTRAP -> exact UCP -> HEAD -> exact Git registry -> exact compatibility contract -> exact selected kernels/rules -> READY.
 READY is forbidden unless all required identities verify.
 
 ROLLBACK:
