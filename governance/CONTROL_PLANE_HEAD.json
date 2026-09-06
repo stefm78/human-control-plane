@@ -1,0 +1,29 @@
+{
+  "schema": "kernel.control-plane-head.v1",
+  "status": "ACTIVE",
+  "deployment_state": "PREPARED_PENDING_HUMAN_G3_CUTOVER",
+  "repository": "stefm78/human-control-plane",
+  "branch": "main",
+  "constitutional_ucp": {
+    "spec_id": "UCP-CONTROL-PLANE",
+    "version": "1.1-R4",
+    "sha256": "c499abc9d1045b3cbe0b632d7470ccbbe52d4dc726968e5206cfdde393f2cfb4",
+    "object": "governance/UCP_ACTIVE.md"
+  },
+  "uao": {
+    "spec_id": "UAO-KERNEL",
+    "status": "ACTIVE",
+    "version": "1.7",
+    "sha256": "39a8431c6270ea0e316cefaefdf220160508a6d04eb7f11978a09530224b6468",
+    "locator": {
+      "provider": "CHATGPT_FILE_LIBRARY",
+      "file": "UAO_ACTIVE.md",
+      "file_id": "file_00000000557482468c15f295d6be5a8a"
+    }
+  },
+  "authority_semantics": {
+    "git_authority_before_human_cutover": false,
+    "commit_exists_is_active": false,
+    "human_g3_cutover_required": true
+  }
+}
