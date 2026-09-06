@@ -1,7 +1,7 @@
 {
   "schema": "kernel.control-plane-head.v1",
   "status": "ACTIVE",
-  "deployment_state": "PREPARED_PENDING_HUMAN_G3_CUTOVER",
+  "deployment_state": "POST_APPLY_ACTIVE",
   "repository": "stefm78/human-control-plane",
   "branch": "main",
   "constitutional_ucp": {
