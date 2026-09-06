@@ -35,6 +35,33 @@
         "git_blob_sha": "8980c239789348456cd66eace66937f86734ebb2"
       },
       "promotion_decision": "HUMAN_G2_GO_EXACT"
+    },
+    {
+      "spec_id": "GOVERNED-CONTINUATION-POLICY",
+      "status": "ACTIVE",
+      "version": "1.0",
+      "sha256": "327a639311ebd652ec026a24e49da60993e48bda464188b4c5fe6c47ac046380",
+      "locator": {
+        "provider": "Git",
+        "repository": "stefm78/human-control-plane",
+        "branch": "main",
+        "object": "governance/active/GOVERNED_CONTINUATION_POLICY_1.0_ACTIVE.md",
+        "git_blob_sha": "0f3434f22ea583e4dce03921436d5ea1bb72713d"
+      },
+      "promotion_decision": "HUMAN_G2_GO_EXACT"
+    }
+  ],
+  "superseded_not_promoted": [
+    {
+      "spec_id": "UAO-KERNEL",
+      "version": "1.9",
+      "change_id": "UAO-1.9-GOVERNED-CONTINUATION",
+      "reason": "governed continuation extracted to independent ACTIVE policy; UAO 1.7 identity preserved"
+    },
+    {
+      "spec_id": "UAO-COMPOSED-ACTIVE-RESOLUTION",
+      "version": "1.0",
+      "reason": "not required for governed continuation"
     }
   ],
   "authority_semantics": {
