@@ -1,0 +1,61 @@
+{
+  "schema": "kernel.successor-registry.v1",
+  "status": "CANDIDATE",
+  "change_id": "KERNEL-SUCCESSOR-GIT-NATIVE-1.0",
+  "material_change_class": "C2",
+  "required_gate": "G2",
+  "authority_delta": "NONE",
+  "kernels": [
+    {
+      "spec_id": "UAO-KERNEL",
+      "version": "2.0",
+      "sha256": "c056667cd4af165f4d270f8a5430ba6d0d6d7c1b8b57eed6a288045ff4be4661",
+      "object": "governance/candidates/successor/UAO_ACTIVE_2.0_CANDIDATE.md"
+    },
+    {
+      "spec_id": "UAR-KERNEL",
+      "version": "1.1",
+      "sha256": "f8adfda4c36ff8fd4738a36b3c18563f3553fd01a7007861d84b1ed1fc36ac54",
+      "object": "governance/candidates/successor/UAR_ACTIVE_1.1_CANDIDATE.md"
+    },
+    {
+      "spec_id": "UAS-KERNEL",
+      "version": "2.4",
+      "sha256": "d4d9803f34a031de92539a61ab9c3a559e29c0a9d00524a1cf8f6b9b4d63a9e4",
+      "object": "governance/candidates/successor/UAS_ACTIVE_2.4_CANDIDATE.md"
+    },
+    {
+      "spec_id": "UAB-KERNEL",
+      "version": "1.2",
+      "sha256": "ecdaa16f5ab0a72e27f2d8c294ac4ff9e8f1cb2f38b43fb7c0ccd2fdbef9129d",
+      "object": "governance/candidates/successor/UAB_ACTIVE_1.2_CANDIDATE.md"
+    },
+    {
+      "spec_id": "UAA-KERNEL",
+      "version": "1.2",
+      "sha256": "b0889bf8767a8fb047974de42c29b0a9b8154463361020a1431bee9f3b955426",
+      "object": "governance/candidates/successor/UAA_ACTIVE_1.2_CANDIDATE.md"
+    },
+    {
+      "spec_id": "UAL-KERNEL",
+      "version": "1.2",
+      "sha256": "095b909329e176c2eca40dfe41e171aad28b15d48552f700a13cbd4a8b386f0a",
+      "object": "governance/candidates/successor/UAL_ACTIVE_1.2_CANDIDATE.md"
+    }
+  ],
+  "governance_rules": [
+    {
+      "spec_id": "KERNEL-GIT-DURABILITY-RULE",
+      "version": "1.0",
+      "sha256": "fd02e6ed0018c9fe496c61f89a2d5fa6e9bfb1890fcf48967ffcbb2853f57521",
+      "object": "governance/active/KERNEL_GIT_DURABILITY_RULE_1.0_ACTIVE.md"
+    },
+    {
+      "spec_id": "GOVERNED-CONTINUATION-POLICY",
+      "version": "1.0",
+      "sha256": "327a639311ebd652ec026a24e49da60993e48bda464188b4c5fe6c47ac046380",
+      "object": "governance/active/GOVERNED_CONTINUATION_POLICY_1.0_ACTIVE.md"
+    }
+  ],
+  "invariant": "EMPTY_SESSION + BOOTSTRAP => EXACT_ACTIVE_KERNEL"
+}
